@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahony0\Floc;
+namespace Mahony0\Floc\Classes;
 
 use Closure;
 
