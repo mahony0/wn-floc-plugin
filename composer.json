@@ -13,6 +13,11 @@
             "role": "Author"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Mahony0\\Floc\\": ""
+        }
+    },
     "require": {
         "php": ">=7.2",
         "composer/installers": "~1.0"
