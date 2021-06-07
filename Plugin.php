@@ -20,7 +20,7 @@ class Plugin extends PluginBase
 
     public function boot()
     {
-        if ($isActive = env('DISABLE_FLOC', true)) {
+        if ($isActive = env('DISABLE_FLOC', false)) {
             $kernel = $this->app->make(Kernel::class);
             $kernel->pushMiddleware(NoFLoCMiddleware::class);
         }

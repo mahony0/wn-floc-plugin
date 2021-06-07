@@ -10,4 +10,4 @@ To install it with Composer, run `composer require mahony0/wn-floc-plugin` from 
 
 # Enable/Disable
 
-You can disable plugin by adding **DISABLE_FLOC=false** to the environment
+You can disable plugin by adding **DISABLE_FLOC=true** to the environment
