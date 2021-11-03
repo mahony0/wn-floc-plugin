@@ -9,7 +9,14 @@ class NoFLoCMiddleware
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->header('Permissions-Policy', 'interest-cohort=()');
+
+        $headers = [
+            'Permissions-Policy', 'interest-cohort=()',
+        ];
+
+        foreach ($headers as $key => $value) {
+            $response->headers->set($key, $value);
+        }
 
         return $response;
     }
